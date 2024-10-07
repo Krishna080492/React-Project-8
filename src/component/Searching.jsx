@@ -30,9 +30,22 @@ function Searching() {
   }
   let handleSearch = (e) => {
     console.log(e.target.value);
-
     setSearch(e.target.value);
   }
+
+  let deleteData = (pos) => {
+    list.splice(pos, 1);
+    let newList = [...list];
+    setList(newList);
+    localStorage.setItem('user', JSON.stringify(newList));
+  }
+
+  let editData = (pos) => {
+    let editUser = list[pos];
+    setUser(editUser);
+    setIndex(pos)
+  }
+
   return (
     <>
       <h2 style={{ marginTop: "50px" }}>User Data (Searching)</h2>

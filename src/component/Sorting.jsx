@@ -63,7 +63,7 @@ function Sorting() {
   return (
     <>
       <h2 style={{ marginTop: "50px" }}>User Data (Sorting)</h2>
-      <form method="post" onSubmit={handleSubmit}>
+      {/* <form method="post" onSubmit={handleSubmit}>
         <label htmlFor="">Name : </label>
         <input type="text" name='name' onChange={handleInput} value={user.name || ''} /><br /><br />
         <label htmlFor="">Email : </label>
@@ -71,7 +71,7 @@ function Sorting() {
         <label htmlFor="">Password : </label>
         <input type="text" name='password' onChange={handleInput} value={user.password || ''} /><br /><br />
         <input type="submit" value="Submit" />
-      </form><br /><br />
+      </form><br /><br /> */}
 
       <table border={1} align='center' cellPadding={10}>
         <thead>
